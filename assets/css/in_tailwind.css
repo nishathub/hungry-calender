@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply mt-2 ring-2  rounded-full px-2 py-0.5 font-semibold text-center transition-all duration-300 hover:border-transparent cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2;
+    }
+    .btn-purple{
+        @apply  ring-purple-700  text-purple-700 text-black hover:bg-gray-700 dark:hover:bg-purple-700 hover:text-white dark:text-gray-300 focus:ring-purple-600 ;
+    }
+    .btn-green{
+        @apply  ring-green-700  text-green-700 text-black hover:bg-gray-700 dark:hover:bg-green-700 hover:text-white dark:text-gray-300 focus:ring-green-600 ;
+    }
+}

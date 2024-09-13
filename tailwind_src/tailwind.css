@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+
+        @apply ring-2 rounded-full px-4 py-0.5 font-semibold text-center transition-all duration-300 hover:border-transparent cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2;
+    }
+    .btn-purple{
+        @apply  ring-purple-700  text-purple-700 text-black hover:bg-gray-700 dark:hover:bg-purple-700 hover:text-white dark:text-gray-300 focus:ring-purple-600 ;
+    }
+    .btn-green{
+        @apply  ring-green-700  text-green-700 text-black hover:bg-gray-700 dark:hover:bg-green-700 hover:text-white dark:text-gray-300 focus:ring-green-600 ;
+    }
+}
+
+.calender_box ul li{
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(90, 152, 223);
+    text-align: center;
+    transition: all linear .3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.single_date:hover{
+    background-color: rgb(90, 152, 223);
+    color: #000;
+}
+.container{
+    border: 1px solid red;
+}
+
+.test_box{
+    background-color: rgb(172, 241, 172);
+}
+.test_box:nth-child(2){
+    background-color: rgb(96, 223, 96);
+}
+.test_box:nth-child(3){
+    background-color: rgb(51, 160, 51);
+}
+.test_box:nth-child(4){
+    background-color: rgb(6, 83, 6);
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-gray-500 h-screen flex flex-col">
+    <!-- <div class= "grid grid-cols-12">
+        <div class="test_box col-span-4">1</div>
+        <div class="test_box col-span-6">2</div>
+        <div class="test_box">3</div>
+        <div class="test_box">4</div>
+    </div> -->
+    <div class="my-10 py-5 justify-center bg-gray-600 gap-4 grid xl:grid-cols-12">
+        <div class="calender_card py-2 xl:col-span-3  flex flex-col items-center ">
+            <h2 class="text-blue-400 font-sans tracking-wide text-center font-bold uppercase mb-3">Interactive Calender</h2>
+            <div class="calender_box bg-gray-800 w-[300px] text-white shadow-lg shadow-blue-500/30 p-4 rounded-md">
+                <h2 class="font-sans tracking-widest text-center font-semibold uppercase mb-3">November</h2>
+                <ul id="calender_dates" class="all_dates list-none flex flex-wrap justify-between gap-2">
+                    <!-- <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">15</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">5</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">8</li>
+                    <li class="single_date">30</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="form_body p-5 xl:col-span-4>
+          <form action=""></form>
+            <form action="#" id="calender_form">
+                <div class="form_group text-white">
+                    <label for="month">Month</label>
+                    <input required type="text" name="month" id="month" class="form-control text-green-300 bg-gray-500 tracking-wider">
+                </div> 
+                <br>
+                <div class="form_group text-white">
+                    <label for="title">Title</label>
+                    <input required type="text" name="title" id="title" class="form-control text-green-300 bg-gray-500 tracking-wider">
+                </div> 
+                <br>
+                <div class="form_group text-white">
+                    <label for="description">Description</label>
+                    <textarea required type="text" name="description" id="description" class="form-control text-green-300 bg-gray-500 tracking-wider"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-green">Save</button>
+                <button id="resetButton" class="btn btn-purple text-white">Reset Data</button>
+            </form>
+        </div>
+        <div class="show_data w-[500px] border-2">
+            <table id="calender_table" class="table table-bordered teble-striped text-white">
+                <thead>
+                  <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td>Malcolm Lockyer</td>
+                    <td>1961</td>
+                  </tr>
+                  <tr>
+                    <td>Witchy Woman</td>
+                    <td>The Eagles</td>
+                    <td>1972</td>
+                  </tr>
+                  <tr>
+                    <td>Shining Star</td>
+                    <td>Earth, Wind, and Fire</td>
+                    <td>1975</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
